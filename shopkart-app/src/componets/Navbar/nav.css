@@ -1,0 +1,160 @@
+/* Keep class names consistent with your original CSS */
+
+.nav__bar {
+  top: 2.625rem;
+  max-width: 1260px;
+  color: var(--primary-white);
+  margin: 0 auto;
+}
+
+.nav__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.nav__info::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary-white);
+}
+
+.nav__logo {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 275;
+  line-height: normal;
+}
+
+.cart__info {
+  position: relative;
+  display: flex;
+  padding: 0.7rem 0;
+  gap: 0.5rem;
+}
+
+.cart__info span {
+  color: #fff;
+  /* Body text 14 */
+  font-family: 'Work Sans';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nav__links {
+  max-width: 47rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nav__links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav__link a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.menu__icons {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu_open,
+.menu_close {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.6rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: var(--primary-white);
+}
+
+.nav-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* left: 47px; */
+  background: #000;
+  z-index: 999;
+  box-shadow: rgba(230, 223, 223, 0.09) 0px 2px 1px,
+    rgba(240, 236, 236, 0) 0px 4px 2px, rgba(94, 93, 93, 0.59) 0px 8px 4px,
+    rgba(82, 82, 82, 0.653) 0px 16px 8px, rgba(54, 53, 53, 0.503) 0px 32px 16px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .menu_open,
+  .menu_close {
+    display: block;
+  }
+  .nav__info {
+    margin-bottom: 0;
+    padding: 0 1rem;
+    align-items: center;
+  }
+  .cart__info {
+    display: none;
+  }
+  .nav__links {
+    display: none;
+    margin: 0;
+  }
+  .expanded {
+    display: block;
+  }
+  .expanded ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    gap: 3rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 450px) {
+  /* .nav__bar {
+    top: 2.625rem;
+    max-width: 250px;
+    color: var(--primary-white);
+    margin: 0 auto;
+    color: #626262;
+    font-family: Poppins;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } */
+  .top__header {
+    color: #626262;
+    font-family: Poppins;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

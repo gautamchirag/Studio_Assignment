@@ -1,0 +1,219 @@
+.hero__section {
+  max-width: 1440px;
+  position: relative;
+  height: 46.8rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.hero__section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../static/images/bgNoiseMobil.png');
+}
+
+.hero__section::after {
+  content: '';
+  position: absolute;
+  bottom: 5.5rem;
+  right: 0;
+  width: 62rem;
+  height: 22.1rem;
+  background: #f07e15;
+  z-index: 2;
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  bottom: 5.5rem;
+  right: 0;
+  width: 62rem;
+  height: 22.1rem;
+  background: #f07e15;
+  opacity: 0.2;
+  z-index: 5;
+}
+
+.hero__img {
+  position: absolute;
+  right: 8.8rem;
+  bottom: 0;
+  width: 27rem;
+  height: 40.9rem;
+  z-index: 4;
+}
+
+.star__img {
+  position: absolute;
+  right: 5.9rem;
+  top: 5.5rem;
+  width: 22.9rem;
+  height: 23.2rem;
+  z-index: 3;
+}
+
+.hero__text__conatiner {
+  position: absolute;
+  left: 8.19rem;
+  bottom: 9.38rem;
+}
+.hero__text {
+  max-width: 61.68rem;
+  height: 21.48rem;
+  position: relative;
+
+  color: var(--primary-white);
+  font-family: 'Syne';
+  font-size: 8.4375rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 6.4125rem;
+  text-transform: capitalize;
+
+  z-index: 5;
+}
+
+.hero__text span:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  z-index: 5;
+}
+.hero__text span:nth-child(2) {
+  position: absolute;
+  left: 16rem;
+  top: 8rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px var(--primary-white);
+
+  z-index: 5;
+}
+.hero__text span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 3.5rem;
+
+  z-index: 5;
+}
+
+.see__more {
+  position: absolute;
+  bottom: 4rem;
+  left: 7.9rem;
+  border: 1px solid #fff;
+}
+.see__more button {
+  background: transparent;
+  color: var(--primary-white);
+  outline: 1px solid var(--primary-white);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1875rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+}
+
+.see__more button:hover,
+:active {
+  cursor: pointer;
+  outline-offset: 2px;
+}
+
+.product__info {
+  position: absolute;
+  right: 1.4rem;
+  bottom: 9.93rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+  z-index: 5;
+  color: #161615;
+  font-family: inherit;
+  font-size: 1.125rem;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  /* hero__section  */
+  .hero__img {
+    position: absolute;
+    right: -3rem;
+    bottom: 0;
+    /* width: 27rem;
+    height: 40.9rem; */
+    z-index: 4;
+  }
+  .hero__section {
+    min-width: 29.375rem;
+    min-height: 42.625rem;
+  }
+
+  .star__img {
+    position: absolute;
+    right: -4rem;
+    top: 5.5rem;
+    width: 20.9rem;
+    height: 23.2rem;
+    z-index: 3;
+  }
+  .hero__text span {
+    color: #fff;
+    font-family: Syne;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125.6%; /* 4.3175rem */
+  }
+  .hero__text span:nth-child(1) {
+    position: absolute;
+    left: -7.5rem;
+    top: 6.5rem;
+
+    z-index: 5;
+  }
+
+  .hero__text span:nth-child(2) {
+    position: absolute;
+    left: -1.5rem;
+    top: 12rem;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--primary-white);
+
+    z-index: 5;
+  }
+  .hero__text span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: -4rem;
+
+    z-index: 5;
+  }
+  .hero__text__conatiner {
+    border: 2px solid red;
+  }
+  .overlay {
+    width: 46.11588rem;
+    height: 20.26213rem;
+  }
+  .see__more {
+    bottom: 3rem;
+    left: 1rem;
+  }
+}

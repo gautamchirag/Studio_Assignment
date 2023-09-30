@@ -1,0 +1,17 @@
+.footer {
+  height: 4.125rem;
+  background: var(--Grey-scale-1000, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.footer-content {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

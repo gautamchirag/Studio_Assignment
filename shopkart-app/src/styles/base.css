@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,900&display=swap");
+
+:root {
+  --primary-gray: #626262;
+  --secondary-gray: hsla(0, 0%, 100%, 0.5);
+  --primary-white: hsla(0, 0%, 100%, 1);
+  --primary-balck: hsla(0, 0%, 0%, 1);
+  --secondary-balck: hsla(0, 0%, 0%, 1);
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-xxl: 1.5rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 2.5rem;
+  --fs-5xl: 3rem;
+  --fs-6xl: 3.5rem;
+  --fs-xxxl: 15.2375rem;
+
+  --body-max-w: 1440px;
+  --box-shadow-btn: 0 0.125em 0.5em var(--neutral-450);
+}
+
+/* Dark Theme */
+.dark-mode {
+}
+
+body {
+  max-width: var(--body-max-w);
+  background-color: var(--neutral-white);
+  font-family: "Poppins", "Work Sans", "Syne", sans-serif;
+  color: var(--primary-black);
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.9375em;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--neutral-500);
+  outline: 2px transparent;
+  border-radius: 50em;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-600);
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-family: Lora;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 50em) {
+  :root {
+    --fs-4xl: 1.75rem;
+    --fs-6xl: 2.25rem;
+  }
+}
